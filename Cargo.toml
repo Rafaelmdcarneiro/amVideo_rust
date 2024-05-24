@@ -1,0 +1,14 @@
+[package]
+name = "amvideo"
+version = "1.0.0"
+authors = ["Matt Bilker <me@mbilker.us>"]
+edition = "2018"
+
+[dependencies]
+anyhow = "1.0.31"
+static_assertions = "1.1.0"
+winapi = { version = "0.3.8", features = ["libloaderapi"] }
+winreg = "0.7.0"
+
+[profile.release]
+lto = true
